@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Deepak Adhikari — Web Developer</title>
+  <meta name="description" content="Deepak Adhikari — Web Developer skilled in HTML, CSS, JavaScript, Tailwind CSS, and UI/UX design." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#caa85a;--accent-2:#1f6feb;--glass:rgba(255,255,255,0.04);--radius:14px;--maxw:1100px;}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial;background:linear-gradient(180deg,var(--bg),#071322);color:#e6eef8}
+    .wrap{max-width:1100px;margin:36px auto;padding:0 20px}
+    header{display:flex;justify-content:space-between;align-items:center;padding:12px;border-radius:12px;background:rgba(255,255,255,0.02)}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:52px;height:52px;border-radius:10px;display:grid;place-items:center;font-family:'Playfair Display',serif;font-weight:700;background:linear-gradient(135deg,var(--accent-2),#123a66)}
+    nav a{color:inherit;text-decoration:none;margin-left:12px;font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr 380px;gap:24px;align-items:center;margin-top:18px}
+    .card{background:rgba(255,255,255,0.03);padding:18px;border-radius:12px}
+    h1{font-family:'Playfair Display',serif;margin:0;font-size:34px}
+    .muted{color:var(--muted)}
+    .skills{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+    .skill{padding:6px 8px;border-radius:999px;background:rgba(255,255,255,0.03)}
+    .projects-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:12px}
+    .proj{background:rgba(255,255,255,0.02);padding:12px;border-radius:10px}
+    .contact-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px}
+    footer{margin-top:28px;color:var(--muted);text-align:center}
+    @media(max-width:880px){.hero{grid-template-columns:1fr}.projects-grid{grid-template-columns:1fr}}
+    img.profile{width:220px;height:220px;object-fit:cover;border-radius:14px;display:block}
+    .cv-btn{display:inline-block;padding:10px 12px;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#fff;border-radius:10px;text-decoration:none;font-weight:700}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">DA</div>
+        <div>
+          <div style="font-weight:700">Deepak Adhikari</div>
+          <div class="muted" style="font-size:13px">Web Developer • Frontend & UI/UX</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero" id="home">
+      <div class="card">
+        <h1>Hi, I'm Deepak Adhikari</h1>
+        <p class="muted">Web Developer skilled in HTML, CSS, JavaScript, Tailwind CSS, React JS and Node.js. Passionate about UI/UX design and building responsive, user-focused websites.</p>
+
+        <div class="skills" aria-label="skills">
+          <div class="skill">HTML5</div><div class="skill">CSS3</div><div class="skill">JavaScript</div><div class="skill">Tailwind CSS</div>
+          <div class="skill">React JS</div><div class="skill">Node.js</div><div class="skill">UI/UX</div><div class="skill">Git</div>
+        </div>
+
+        <div style="margin-top:12px" class="contact-row">
+          <a class="cv-btn" href="Deepak-Resume.pdf" target="_blank">Download Resume (PDF)</a>
+          <a class="cv-btn" href="#contact">Hire / Contact</a>
+        </div>
+
+        <div style="margin-top:14px" class="card muted">
+          <strong>Location:</strong> Ranikhet, Uttarakhand, India<br>
+          <strong>Phone:</strong> +91-6399851956<br>
+          <strong>Email:</strong> <a href="mailto:adhikarideepak719@gmail.com" style="color:inherit">adhikarideepak719@gmail.com</a><br>
+          <strong>LinkedIn / GitHub:</strong> available on resume
+        </div>
+      </div>
+
+      <aside style="text-align:center">
+        <!-- tries to load profile.jpg if present, else shows fallback image from Unsplash -->
+        <img id="profileImg" class="profile" src="WhatsApp Image 2025-11-20 at 18.29.45_f8a11212.jpg" alt="Deepak Adhikari profile photo" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1545996124-1b8e6a1f2f7f?q=80&w=800&auto=format&fit=crop'">
+        <div style="margin-top:10px;color:var(--muted);font-size:14px">BCA Student </div>
+      </aside>
+    </section>
+
+    <section id="projects" style="margin-top:18px">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="proj"><strong>To-Do List Web App</strong><div class="muted">Task manager with add/delete/complete features. (GitHub)</div></div>
+        <div class="proj"><strong>Stopwatch / Timer</strong><div class="muted">Interactive countdown timer and stopwatch built with JS. (GitHub)</div></div>
+        <div class="proj"><strong>Portfolio Website</strong><div class="muted">Responsive personal portfolio using HTML & CSS. (GitHub)</div></div>
+        <div class="proj"><strong>Survey Form</strong><div class="muted">Semantic form styled with CSS for accessibility. (GitHub)</div></div>
+      </div>
+    </section>
+
+    <section id="about" style="margin-top:18px">
+      <div class="card">
+        <h2>About</h2>
+        <p class="muted">I am a Web Developer focused on building responsive, accessible and maintainable front-end applications. I enjoy optimizing UX, learning modern JS tools and collaborating via GitHub.</p>
+
+        <h3 style="margin-top:12px">Education</h3>
+        <p class="muted">Bachelors of Computer Application (BCA) — Amrapali Group of Institutes, Haldwani (2022–2025)</p>
+
+        <h3 style="margin-top:12px">Certifications</h3>
+        <ul class="muted">
+          <li>Web Development Internship — Vault of Codes (2025)</li>
+          <li>AI for Beginners — HP LIFE (July 2025)</li>
+          <li>JavaScript Fundamentals to Advanced (Udemy) — July 2025</li>
+        </ul>
+
+        <h3 style="margin-top:12px">Languages & Interests</h3>
+        <p class="muted">Languages: Hindi (Native), English (Professional). Interests: Front-end development, UI/UX design, web performance optimization.</p>
+
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:18px" class="card">
+      <h2>Contact</h2>
+      <p class="muted">Ready to collaborate? Send a quick message.</p>
+      <form onsubmit="return false;">
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <input placeholder="Your name" style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit;flex:1" />
+          <input placeholder="Email" style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit;flex:1" />
+        </div>
+        <textarea placeholder="Message" style="width:100%;margin-top:8px;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit"></textarea>
+        <div style="margin-top:8px;text-align:right"><button style="padding:10px 12px;border-radius:8px;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#fff;border:none">Send</button></div>
+      </form>
+    </section>
+
+    <footer>
+      <div class="muted">© 2025 Deepak Adhikari • Built with HTML, CSS & JS</div>
+    </footer>
+
+    <div style="margin-top:8px;font-size:12px;color:var(--muted)">
+      <em>Resume information used from the uploaded file.</em> fileciteturn0file0
+    </div>
+  </div>
+
+</body>
+</html>
